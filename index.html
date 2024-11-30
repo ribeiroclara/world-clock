@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
     <title>WORLD CLOCK - Clara Ribeiro</title>
 </head>
 <body>
@@ -13,31 +15,30 @@
     </video>
 <div class="container">
     <h1>World Clock</h1>
-   
     <form class="search-form" id="search-form">
         <input type="search" placeholder="Enter a city..." required id="search-form-input" class="search-form-input" />
         <input type="submit" value="Search" class="search-form-button" />
     </form>
-    <div class="city">
+    <div class="city" id="newyork">
     <div>
       <h2>New York</h2>
-      <div class="date">December 13th 2024</div>
+      <div class="date"></div>
     </div>
-      <div class="time">1:48:15 <small>PM</small></div>
+      <div class="time"></div>
     </div>
-    <div class="city">
+    <div class="city" id="hongkong">
     <div>
         <h2>Hong Kong</h2> 
-        <div class="date">December 13th 2024</div>
+        <div class="date"></div>
     </div>
-        <div class="time">1:48:15 <small>PM</small></div>
+        <div class="time"></div>
     </div>
-    <div class="city">
+    <div class="city" id="brasilia">
     <div>
-        <h2>Brasilia</h2>
-        <div class="date">December 13th 2024</div>
+        <h2>São Paulo</h2>
+        <div class="date"></div>
     </div>
-        <div class="time">1:48:15 <small>PM</small></div>
+        <div class="time"></div>
     </div>
 </div>
     <footer>This project was coded by Clara Ribeiro and is <a href="#" target="_blank"> open source on GitHub. </a>
