@@ -1,5 +1,6 @@
 body{
     font-family: sans-serif;
+
 }
 
 .container {
@@ -73,4 +74,32 @@ h2 {
 
 footer {
     text-align: center;
+}
+
+.video-background {
+    position: relative;
+    height: 100vh;
+    /* Altura da tela inteira */
+    overflow: hidden;
+    /* Evita rolagem extra */
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px;
 }
