@@ -1,51 +1,90 @@
-body{
+body {
     font-family: sans-serif;
-
-}
-
-.container {
-    position: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.3);
-    background-size: contain;
-    max-width: 900px;
-    margin: 75px auto;
-    border-radius: 8px;
-    padding: 30px 30px 30px 30px;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
     color: white;
 }
 
-.search-form-input {
+.container {
+    margin: 75px auto;
+    max-width: 900px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+}
+
+select {
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: #f9f7fe;
     border-radius: 6px;
     width: 78.4%;
     font-size: 18px;
-    padding: 15px 20px;
+    padding: 10px 20px;
+    margin-left: 160px;
 }
 
-.search-form-button {
+.get-time {
     background: rgb(26, 100, 214);
-    padding: 15px 30px;
+    padding: 10px 30px;
     border: none;
     border-radius: 6px;
     color: whitesmoke;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     margin-left: 5px;
+    margin-bottom: 5px;
+    position: absolute;
+    left: 20px;
 }
 
-.search-form-button:hover {
+.get-time:hover {
     background: transparent;
     color: #1a64d6;
     border: 1px solid #1a64d6;
+    padding: 10px 30px;
+}
+.searched-city-name {
+    font-size: 28px;
+    margin: 10px 0;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.searched-city-date {
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+.searched-city-time {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.searched-city-time small {
+    font-size: 24px;
+    vertical-align: middle;
+    line-height: 36px;
+}
+
+.user-time {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 20px;
+    padding: 20px 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
 .city {
     display: flex;
-    margin: 20px 0;
     justify-content: space-between;
+    margin: 20px 0;
     font-size: 20px;
     padding: 20px 0;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
@@ -73,15 +112,16 @@ h2 {
 }
 
 footer {
+    margin-top: -50px;
     text-align: center;
+    font-size: 12px;
+    color: whitesmoke;
 }
 
 .video-background {
     position: relative;
     height: 100vh;
-    /* Altura da tela inteira */
     overflow: hidden;
-    /* Evita rolagem extra */
 }
 
 video {
@@ -99,7 +139,25 @@ video {
     position: relative;
     z-index: 1;
     text-align: center;
-    color: white;
-    font-family: sans-serif;
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+.search-form-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.search-form-button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.time {
+    font-size: 30px;
+}
 }

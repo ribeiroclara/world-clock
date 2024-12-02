@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
     <title>WORLD CLOCK - Clara Ribeiro</title>
@@ -14,11 +15,31 @@
         <source src="background.mp4" type="video/mp4" />
     </video>
 <div class="container">
-    <h1>World Clock</h1>
-    <form class="search-form" id="search-form">
-        <input type="search" placeholder="Enter a city..." required id="search-form-input" class="search-form-input" />
-        <input type="submit" value="Search" class="search-form-button" />
-    </form>
+<select id="city">
+    <option value="">Select a city...</option>
+    <option value="Europe/Paris">Paris</option>
+    <option value="America/Bahia">Bahia</option>
+    <option value="Australia/Sydney">Sydney</option>
+    <option value="America/New_York">New York</option>
+    <option value="Asia/Hong_Kong">Hong Kong</option>
+    <option value="America/Sao_Paulo">Brasilia</option>
+    <option value="Asia/Jerusalem">Jerusalem</option>
+    <option value="Asia/Tel_Aviv">Tel Aviv</option>
+    <option value="Australia/Perth">Perth</option>
+    <option value="Europe/Budapest">Budapest</option>
+    <option value="Europe/Lisbon">Lisbon</option>
+    <option value="Asia/Bangkok">Bangkok</option>
+</select>
+<button class="get-time" id="get-time">Your Location</button>
+<div class="user-time" id="user-time">
+    <div>
+        <h2>Your Location</h2>
+        <div class="date"></div>
+    </div>
+    <div class="time"></div>
+</div>
+<div id="cities">
+    
     <div class="city" id="newyork">
     <div>
       <h2>New York</h2>
@@ -35,15 +56,16 @@
     </div>
     <div class="city" id="brasilia">
     <div>
-        <h2>São Paulo</h2>
+        <h2>London</h2>
         <div class="date"></div>
     </div>
         <div class="time"></div>
     </div>
 </div>
-    <footer>This project was coded by Clara Ribeiro and is <a href="#" target="_blank"> open source on GitHub. </a>
-
-    </footer>
     <script src="src/script.js"></script>
+</div>
+    <footer>This project was coded by Clara Ribeiro and is <a href="#" target="_blank"> open source on GitHub. </a>
+    
+    </footer>
 </body>
 </html>
